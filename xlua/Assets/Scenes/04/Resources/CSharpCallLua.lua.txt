@@ -1,0 +1,34 @@
+a = 100
+str = "sl"
+isDie = false
+
+person = {
+	name = "sl",
+	age = 25,222,333,
+	eat = function(self,a,b)
+		print("哈哈"..tostring(a+b))
+	end
+}
+
+function person:eat2(a,b)
+	print("哈哈"..tostring(a+b))
+end
+
+function person.eat3(self,a,b)
+	print("哈哈"..tostring(a+b))
+end
+
+function add(a,b)
+	print("add"..tostring(a+b))
+	return a+b
+end
+
+function outBack(a,b)
+	print("outBack"..tostring(a+b))
+	return a+b,"outBack"
+end
+
+function refBack(a,b)
+	print("refBack"..tostring(a+b))
+	return a+b,"refBack"
+end

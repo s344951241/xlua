@@ -1,0 +1,21 @@
+--全局静态的属性方法
+
+CS.UnityEngine.GameObject()
+
+print(CS.UnityEngine.Time.deltaTime)
+
+local gameObjet = CS.UnityEngine.GameObject
+
+--local camera = CS.UnityEngine.GameObject.Find("Main Camera")
+local camera = gameObjet.Find("Main Camera")
+camera.name = "luaCamera"
+
+
+--对象的属性方法
+local cameraCom = camera:GetComponent("Camera")--camera.GetComponent(camera,"Camera")
+gameObjet.Destroy(cameraCom)
+
+
+
+
+--------lua 与 c# 的对应，self及对象，方法自然用self为第一个参数，静态方法不用，最好用:代替
